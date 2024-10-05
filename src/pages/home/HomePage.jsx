@@ -3,6 +3,7 @@ import '../../components/Button';
 import './HomePage.css';
 import Button from '../../components/Button';
 import { PageRoutes } from '../PageRoutes';
+import SettingButton from '../../components/SettingsButton';
 
 function HomePage() {
   const navigate = useNavigate();
@@ -14,6 +15,7 @@ function HomePage() {
         <p>
           It's just <code>HomePage.jsx</code>
         </p>
+        <SettingButton />
         <Button
           label="About"
           onClick={() => navigate(PageRoutes.About)}

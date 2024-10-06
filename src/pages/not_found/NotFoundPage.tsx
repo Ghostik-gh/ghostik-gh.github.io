@@ -1,24 +1,24 @@
 import { useNavigate } from 'react-router-dom';
-import './AboutPage.css';
 import Button from '../../components/Button';
 import { PageRoutes } from '../PageRoutes';
 
-function AboutPage() {
+function NotFoundPage() {
   const navigate = useNavigate();
 
   return (
     <>
-      <h1>About Furniture Creater</h1>
       <div className="card">
+        <p>
+          Page not found - the path <code>{location.pathname}</code>, did not
+          match any routes.
+        </p>
         <Button
-          label="Home"
+          label="pls go to home page"
           onClick={() => navigate(PageRoutes.Home)}
-          color="blue"
-          size="large"
         />
       </div>
     </>
   );
 }
 
-export default AboutPage;
+export default NotFoundPage;

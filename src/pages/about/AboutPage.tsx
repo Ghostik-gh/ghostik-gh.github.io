@@ -1,16 +1,14 @@
-import { useNavigate } from 'react-router-dom';
-import Button from './../../components/Button';
-import { PageRoutes } from '../PageRoutes';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 function AboutPage() {
-  const navigate = useNavigate();
-
   return (
     <>
+      <Header />
       <div className="card">
         <h1>About Furniture Creater</h1>
-        <Button label="Home" onClick={() => navigate(PageRoutes.Home)} />
       </div>
+      <Footer />
     </>
   );
 }

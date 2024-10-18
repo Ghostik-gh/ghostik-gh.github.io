@@ -4,6 +4,7 @@ import AboutPage from './pages/about/AboutPage.tsx';
 import HomePage from './pages/home/HomePage.js';
 import NotFoundPage from './pages/not_found/NotFoundPage.js';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+import Layout from './components/Layout.tsx';
 
 const theme = extendTheme({
   fonts: {
@@ -29,13 +30,15 @@ const theme = extendTheme({
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/*" element={<NotFoundPage />} />
-        </Routes>
-      </BrowserRouter>
+      <Layout>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/*" element={<NotFoundPage />} />
+          </Routes>
+        </BrowserRouter>
+      </Layout>
     </ChakraProvider>
   );
 }

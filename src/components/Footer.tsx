@@ -6,11 +6,13 @@ const Footer = () => {
   const navigate = useNavigate();
 
   return (
-    <Box display={'flex'} gap={'10px'} justifyContent={'space-evenly'}>
-      <Button onClick={() => navigate(PageRoutes.Home)}>Home</Button>
-      <Button onClick={() => navigate(PageRoutes.About)}>About</Button>
-      <Button onClick={() => navigate('/another_wrong_page')}>Another</Button>
-    </Box>
+    <footer>
+      <Box display={'flex'} gap={'10px'} justifyContent={'space-evenly'}>
+        <Button onClick={() => navigate(PageRoutes.Home)}>Home</Button>
+        <Button onClick={() => navigate(PageRoutes.About)}>About</Button>
+        <Button onClick={() => navigate('/another_wrong_page')}>Another</Button>
+      </Box>
+    </footer>
   );
 };
 

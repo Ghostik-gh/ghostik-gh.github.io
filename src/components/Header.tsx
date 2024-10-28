@@ -7,7 +7,14 @@ const Header = () => {
   const navigate = useNavigate();
   return (
     <>
-      <Box display={'flex'} gap={'10px'} justifyContent={'space-evenly'}>
+      <Box
+        as="header"
+        display={'flex'}
+        flexDirection={'row'}
+        gap={'10px'}
+        justifyContent={'flex-end'}
+        padding={'15px'}
+      >
         <Button onClick={() => navigate(PageRoutes.Home)}>Home</Button>
         <Button onClick={() => navigate(PageRoutes.About)}>About</Button>
         <Button onClick={() => navigate('/another_wrong_page')}>Another</Button>

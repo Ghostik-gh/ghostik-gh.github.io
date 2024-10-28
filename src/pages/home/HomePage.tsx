@@ -1,18 +1,18 @@
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import { ProductCard } from '../../components/ProductCard/ProductCard';
+import { Box, Container } from '@chakra-ui/react';
 
 function HomePage() {
   return (
     <>
       <Header />
-      <div className="card">
-        <h1>Furniture</h1>
-        <p>
-          It's just <code>HomePage.tsx</code>
-        </p>
-      </div>
-      <ProductCard title="Card Title" price={100} imageUrl='/vite.svg' />
+      <Container as={'main'}>
+        <Box>
+          <h1>Типография</h1>
+        </Box>
+        <ProductCard title="Card Title" price={100} imageUrl="/vite.svg" />
+      </Container>
       <Footer />
     </>
   );

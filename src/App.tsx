@@ -4,6 +4,7 @@ import HomePage from './pages/home/HomePage.js';
 import NotFoundPage from './pages/not_found/NotFoundPage.js';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import Layout from './components/Layout.tsx';
+import './App.css';
 
 const theme = extendTheme({
   fonts: {

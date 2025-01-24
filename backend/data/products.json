@@ -1,0 +1,56 @@
+[
+    {
+		"id":          1,
+		"name":        "Листовки от 3 700 руб. за 100 шт.",
+		"description": "Профессиональный буклет с тиснением",
+		"price":       1500,
+		"category":    "Корпоративная полиграфия",
+		"image_url":    "product_1_1.png",
+		"image_url2":    "product_1_2.png"
+	},
+    {
+		"id":          2,
+		"name":        "Открытки от 2000 руб. за 10 шт.",
+		"description": "Профессиональный буклет с тиснением",
+		"price":       1.5,
+		"category":    "Корпоративная полиграфия",
+		"image_url":    "product_2_1.png",
+		"image_url2":    "product_2_2.png"
+	},
+    {
+		"id":          3,
+		"name":        "Бумажные стаканы",
+		"description": "Профессиональный буклет с тиснением",
+		"price":       5000.50,
+		"category":    "Корпоративная полиграфия",
+		"image_url":    "product_3_1.png",
+		"image_url2":    "product_3_2.png"
+	},
+    {
+		"id":          4,
+		"name":        "Ростовые фигуры от 6 300 руб./шт.",
+		"description": "Профессиональный буклет с тиснением",
+		"price":       3500,
+		"category":    "Корпоративная полиграфия",
+		"image_url":    "product_4_1.png",
+		"image_url2":    "product_4_2.png"
+	},
+    {
+		"id":          5,
+		"name":        "Каталоги 14 600 руб. за 10 шт.",
+		"description": "Профессиональный буклет с тиснением",
+		"price":       2000,
+		"category":    "Корпоративная полиграфия",
+		"image_url":    "product_5_1.png",
+		"image_url2":    "product_5_2.png"
+	},
+    {
+		"id":          6,
+		"name":        "Приглашения 6 600 руб. за 100 шт.",
+		"description": "Профессиональный буклет с тиснением",
+		"price":       1000,
+		"category":    "Корпоративная полиграфия",
+		"image_url":    "product_6_1.png",
+		"image_url2":    "product_6_2.png"
+	}
+]

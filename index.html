@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="icon.avif" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
@@ -23,12 +23,33 @@
       }
     }(window.location))
   </script>
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;API_KEY=" type="text/javascript"></script>
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
   <script type="module" src="src/main.tsx"></script>
+
+
+  <script type="text/javascript">
+    ymaps.ready(init);
+    function init() {
+      myMap = new ymaps.Map("map", {
+        center: [54.189582, 37.610377],
+        zoom: 15
+      });
+
+      myMap.controls.add(
+        new ymaps.control.ZoomControl()
+      );
+      myPlacemark = new ymaps.Placemark([54.189582, 37.610377], {}, {
+        preset: "twirl#skatingIcon"
+      });
+      myMap.geoObjects.add(myPlacemark);
+    };
+  </script>
 </body>
 
 </html>

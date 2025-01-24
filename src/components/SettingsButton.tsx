@@ -2,11 +2,12 @@ import { Box, Button, useColorMode } from '@chakra-ui/react';
 import { SunIcon, StarIcon } from '@chakra-ui/icons';
 
 const SettingsButton = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
 
   return (
     <Box>
-      <Button onClick={toggleColorMode}>
+      <Button>
+        {/* onClick={toggleColorMode} */}
         {colorMode === 'light' ? <StarIcon /> : <SunIcon />}
       </Button>
     </Box>

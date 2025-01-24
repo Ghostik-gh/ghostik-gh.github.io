@@ -1,0 +1,32 @@
+[
+    {
+		"id":       1,
+		"name":     "Корпоративный буклет",
+		"link":     "/about",
+		"image_url": "banner_1.jpg"
+	},
+	{
+		"id":       2,
+		"name":     "Корпоративный буклет",
+		"link":     "/about",
+		"image_url": "banner_2.jpg"
+	},
+	{
+		"id":       3,
+		"name":     "Корпоративный буклет",
+		"link":     "/about",
+		"image_url": "banner_3.jpg"
+	},
+	{
+		"id":       4,
+		"name":     "Корпоративный буклет",
+		"link":     "/about",
+		"image_url": "banner_4.jpg"
+	},
+	{
+		"id":       5,
+		"name":     "Корпоративный буклет",
+		"link":     "/about",
+		"image_url": "banner_5.jpg"
+	}
+]
